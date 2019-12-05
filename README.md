@@ -1,6 +1,6 @@
 # [Project-Ruuuun] Document
 
-프로젝트에 필요한 문서 정리를 위한 레포지토리
+프로젝트에 필요한 문서 정리를 위한 Repository
 
 ## 문서 링크
 
