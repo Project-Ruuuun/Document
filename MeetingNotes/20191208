@@ -1,0 +1,52 @@
+# 풀스택 개발자 :: 2 week 회의내용
+#0_inp/dev##2_act/seminar##5_data/date/2019/12/08#
+
+#### React-Native에 관하여
+
+1. 팀원 마다 진척도가 다른 상태이다. 어떤 팀원은 개발환경 구성에서 딱히 어려움이 없어서 바로 실습에 들어간 반면, 다른 팀원은 개발환경을 구성하는데 무언가 버벅임이 있었다. 아마도 OS차이 Android기반이여서 그렇지 않을까 생각한다.
+
+-> ~그러면, OS를 변경하기는 어려움으로 기기 테스트를 우선적으로 Android에서 하는것으로 한다.~
+
+2. 생각보다 실습한 내용을 문서로 정리하는 시간이 생각보다 길었고, 서로의 진척도 확인이 어려운 상태여서  어디까지 준비를 해야할지 모르겠다. 
+
+-> 세미나에서 서로 리뷰를 할 수 있는 문서가 있으면 좋겠다라는 피드백을 받았음.
+-> 1차적으로 공부한 내용을 rough한 형태로 구성하고 내용을 첨가하면 좋을 것으로 생각이 든다.
+
+> cf. 예시.
+>  Spring Boot :: 백기선 1202-1206
+> #0_inp/dev #2_act/dev #5_data/dev/java #5_data/dev/spring #5_data/date/2019/12/02##5_data/date/2019/12/06#
+>
+>## Reference
+>[스프링부트 입문- 백기선](https://www.youtube.com/watch?v=PicKx3lDGLk&list=PLfI752FpVCS8tDT1QEYwcXmkKDz-_6nm3&index=3&t=5s)
+>[Spring Boot Reference Documentation](https://docs.spring.io/spring-boot/docs/2.2.1.RELEASE/reference/html/) 
+>[GitHub - SikSo1897/SpringBootTutorial](https://github.com/SikSo1897/SpringBootTutorial) - 실습 Repository
+
+>#### Day 1. 스프링 부트 시작하기.
+>#5_data/date/2019/12/02
+>[[Spring Boot :: Day 1. 스프링 부트 시작하기.]]
+>Spring Boot 시작하기 앞서 Spring은 어떤식으로 맞물려서 돌아가는 지 맛보기. Spring Boot Set Up은 사용되지 않았고, Reference Document 읽어가면서 시작함.
+
+>#### Day 2. Excutable JAR 만들기.
+>#5_data/date/2019/12/03
+>[[Spring Boot :: Day 2-1. Executable JAR 만들기]] 
+>[[Spring Boot :: Day 2-2. Using Spring Boot]]
+>우선 JAR가 정확히 무엇인지 정의가 필요해보임. 찾아봐야겠다. 안다는 전제하에 개념을 설명. 오늘은 직접적인 코드 작업은 없었다. 아마도 Maven 형태로 진행할듯 Gradle은 후에 사용방법을 익혀야 할 듯.
+
+
+
+-> ~~~**고로!! 매주**~ 목요일~**에 현재 진척도를 확인하고, 진척도에 따라 서로 리뷰할 수 있는 문서를 토요일에 완성해가는 형태로 하는것도 나쁘지 않다고 생각이 든다.**~~~
+-> 주간 진척도 확인(당분간 목요일) 세미나 전날 팀원 진척도에 맞춰서 문서 작성 후 당일날 해당 내용 정리.
+
+3. 다음 세미나까지 RN에서 어떤것을 만들면서 공부할 것인지에대하여 의논이 있었다.
+-> `인스타그램`으로 모두 통일한다.
+-> 블로그/강의를 어느정도 통일 시키는 것이 좋아보인다. 
+(구현하는 순서가 동일해야 서로 피드백 주고 받기가 좋을것 같다고 생각한다.)
+
+#### Spring Boot
+1. RN과 Spring Boot를 두개를 동시에 보기에는 직장을 다니고있는 팀원에게는 너무 많은 양을 공부해야하는것 같아보였다.
+-> 개별적으로 공부하고, 추후 RN으로 만든 앱에서 REST API 서버가 필요할때 천천히 설명하는 형태로 진행.
+
+2. Spring을 처음 접해보는 팀원들이 있어서 Spring Boot를 시작하기전, 어느정도 개념설명 및 공부자료가 필요해보였다.
+-> 연구실에서 Spring을 개인적으로 공부하면서 참고할 수 있는 자료 및 추후 세미나 자료를 천천히 준비.
+
+
