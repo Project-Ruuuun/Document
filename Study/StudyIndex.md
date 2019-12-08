@@ -2,6 +2,6 @@
 
 |스터디 제목|링크|
 |----|----|
-|Git|[문서 이동]()|
+|React-Native Intro|[문서 보기](./ReactNative-Intro.md)|
 
 
