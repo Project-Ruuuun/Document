@@ -527,11 +527,11 @@ componentDidCatch
 - 컴포넌트가 마운트 된 직후에 불려지게 된다
 - 여기에 상태를 설정하면 다시 렌더링이 시작된다
 
-> shouldComponentUpdate(nextProps: Readonly<P>, nextState: Readonly<S>, nextContext: any): boolean;
+> shouldComponentUpdate(nextProps: Readonly<P>, nextState: Readonly\<S>, nextContext: any): boolean;
 
 - props와 states의 변경으로 다시 렌더링을 트리거 해야하는지 여부를 결정하기 위해 호출된다
 - props 또는 states 가 바뀌었을 때 호출된다
-- false가 반환되면, render, componentWillUpdate, componentDidUpdate는 호출되지 않는다
+- false가 반환되면, render, componentWillUpdate, compoㅍnentDidUpdate는 호출되지 않는다
 
 > componentWillUnmount(): void;
 
@@ -545,14 +545,14 @@ componentDidCatch
 
 ### NewLifecycle
 
-> getSnapshotBeforeUpdate(prevProps: Readonly<P>, prevState: Readonly<S>): SS | null;
+> getSnapshotBeforeUpdate(prevProps: Readonly\<P>, prevState: Readonly\<S>): SS | null;
 
 - render의 결과를 적용하기 전에 실행된다.
 - componentDidUpdate에 제공할 객체를 반환된다.
 - render가 변경되기 전에 스크롤 위치와 같은 것을 저장하는데 유용하다.
 - 참고 : getSnapshotBeforeUpdate 가 있으면 더 이상 사용되지 않는 라이프 사이클 이벤트가 실행되지 않습니다.
 
-> componentDidUpdate(prevProps: Readonly<P>, prevState: Readonly<S>, snapshot?: SS): void;
+> componentDidUpdate(prevProps: Readonly\<P>, prevState: Readonly\<S>, snapshot?: SS): void;
 
 - 업데이트가 발생한 직후에 호출된다. 단, 초기 렌더링에는 호출되지 않는다.
 - 파라미터 중에 snapshot은 getSnapshotBeforeUpdate 가 있는 경우에만 존재하며 null이 아닌 것을 반환합니다.
@@ -583,7 +583,7 @@ componentDidCatch
 - 새 props와 기존의 props를 비교할 수 있다.
 - 참고 : getSnapshotBeforeUpdate 또는 getDerivedStateFromProps가 있으면 호출되지 않는다.
 
-> UNSAFE_componentWillReceiveProps(nextProps: Readonly<P>, nextContext: any): void;
+> UNSAFE_componentWillReceiveProps(nextProps: Readonly\<P>, nextContext: any): void;
 
 - react 16.3에 deprecated 되었고, 대신에 static getDerivedStateFromProps을 사용하길 권장한다.
 - setState가 호출되면 실행되지 않는다.
@@ -592,14 +592,14 @@ componentDidCatch
 - 참고 : getSnapshotBeforeUpdate 또는 getDerivedStateFromProps가 있으면 호출되지 않는다.
 
 
-> componentWillUpdate(nextProps: Readonly<P>, nextState: Readonly<S>, nextContext: any): void;
+> componentWillUpdate(nextProps: Readonly\<P>, nextState: Readonly\<S>, nextContext: any): void;
 
 - react 16.3에 deprecated 되었고, 대신에 getSnapshotBeforeUpdate 을 사용하시길 권장한다고 하며, react 17부터는 사용할 수 없다.
 - 새로운 Props 또는 state가 수신하여 렌더링 직전에 호출된다. 초기 렌더링에는 호출되지 않는다.
 - 주의! 여기에서 setState 를 하시면 안된다.
 - 참고 : getSnapshotBeforeUpdate 또는 getDerivedStateFromProps가 있으면 호출되지 않는다.
 
-> UNSAFE_componentWillUpdate(nextProps: Readonly<P>, nextState: Readonly<S>, nextContext: any): void;
+> UNSAFE_componentWillUpdate(nextProps: Readonly\<P>, nextState: Readonly\<S>, nextContext: any): void;
 
 - react 16.3에 deprecated 되었고, 대신에 getSnapshotBeforeUpdate을 사용하시길 권장한다.
 - 새로운 Props 또는 state가 수신하여 렌더링 직전에 호출된다. 초기 렌더링에는 호출되지 않는다.
